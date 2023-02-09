@@ -1,0 +1,256 @@
+/* Formatação geral */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+.dourado{
+    color: var(--dourado);
+}
+.centraliza{
+    text-align: center;
+}
+/* Declaração das variáveis */
+:root{
+    --cor_de_fundo: #111111;
+    --dourado: #DEBC60;
+}
+/* Formatação do Cabeçalho */
+header{
+    background-color: var(--cor_de_fundo);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* Formatação do Menu */
+nav{
+    background-color: var(--cor_de_fundo);
+    position: sticky;
+    top: 0;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+nav ul li{
+    width: 180px;
+    height: 32px;
+    text-align: center;
+    transition: all 0.5s;
+}
+nav ul li a{
+    width: 180px;
+    height: 32px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--dourado);
+    transition: all 0.8s;
+}
+nav ul li a:hover{
+    color: white;
+}
+/* Fim da formatação do Menu */
+
+/* Formatação do Main*/
+hr{
+    background-color: black;
+    height: 3px;
+    margin: 24px 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+article{
+    padding-top: 32px;
+}
+/* Fim da formatação do Main */
+
+/* Formatação Home */
+article{
+    line-height: 2;
+}
+.Lista_home{
+    padding: 0 30px;
+}
+/* Fim da formatação do Home */
+
+/* Formatação do Esportes */
+#Esportes{
+    background-color: var(--cor_de_fundo);
+    color: white;
+    padding-top: 24px;
+    line-height: 2;
+}
+.titulo_esportes{
+    text-align: center;
+    font-size: 36px;
+    color: var(--dourado);
+    margin-right: 16px;
+    margin-left: 16px;
+}
+.lista_futsal{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+.lista_futsal li+li{
+    margin-left: 24px;
+}
+#Esportes p{
+    margin: 12px 0;
+}
+.principal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.card{
+    width: 486px;
+    background-color: var(--dourado);
+    color: black;
+    font-weight: bold;
+    padding: 12px 24px;
+    margin: 8px;
+}
+#goalball{
+    background-color: var(--dourado);
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    margin: 32px 0;
+    max-width: 1200px;
+}
+#goalball div{
+    max-width: 700px;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.galeria img{
+    margin: 12px auto;
+}
+.titulo_entre_linhas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.listra{
+    background-color: var(--dourado);
+    width: 100%;
+    height: 3px;
+}
+h4{
+    font-weight: bolder;
+    font-size: 20px;
+}
+#galeria_elencos{
+    max-width: 1200px;
+    background-color: var(--dourado);
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+}
+#elenco_masculino{
+    max-width: 550px;
+}
+#elenco_feminino{
+    max-width: 550px;
+    margin-left: 8px;
+}
+.titulo_elencos{
+    font-size: 24px;
+}
+.camisas{
+    background-color: #ebebeb;
+    color: black;
+    text-align: center;
+    border-radius: 50px;
+}
+.galeria_trofeus{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.galeria_trofeus div{
+    border: 2px solid var(--dourado);
+    border-radius: 12px;
+    display:block;
+    width: 282px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 24px;
+    transition: all 0.6s;
+}
+.galeria_trofeus div:hover{
+    background-color: var(--dourado);
+    color: black;
+}
+/* Fim da formatação do Esportes */
+
+/* Formatação Contato */
+#Contato{
+    background-color: var(--cor_de_fundo);
+    color: white;
+    line-height: 2;
+}
+#Contato a{
+    color: dodgerblue;
+}
+/* Fim da formatação do contato */
+
+/* Formatação do Mapa do Site */
+#mapa_do_site{
+    background-color: var(--cor_de_fundo);
+    color: white;
+    line-height: 2;
+    padding-bottom: 24px;
+}
+#mapa_do_site ul{
+    list-style: none;
+}
+#mapa_do_site a{
+    color: dodgerblue;
+    padding-left: 32px;
+}
+/* Fim da formatação do Mapa do Site*/
+
+/* Formatação do Footer */
+footer{
+    background-color: black;
+    color: white;
+    line-height: 2;
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+footer a{
+    color: var(--dourado);
+    transition: all 0.2s;
+    text-decoration: none;
+}
+footer a:hover{
+    color: white;
+}
+/* Fim da formatação do Footer */
